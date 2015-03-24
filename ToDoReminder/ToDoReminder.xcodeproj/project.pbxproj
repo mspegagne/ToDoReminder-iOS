@@ -7,50 +7,48 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		EDB200911AC04C9F0046F3D6 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDB200901AC04C9F0046F3D6 /* AppDelegate.swift */; };
-		EDB200931AC04C9F0046F3D6 /* RootViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDB200921AC04C9F0046F3D6 /* RootViewController.swift */; };
-		EDB200951AC04C9F0046F3D6 /* DataViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDB200941AC04C9F0046F3D6 /* DataViewController.swift */; };
-		EDB200971AC04C9F0046F3D6 /* ModelController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDB200961AC04C9F0046F3D6 /* ModelController.swift */; };
-		EDB2009A1AC04C9F0046F3D6 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EDB200981AC04C9F0046F3D6 /* Main.storyboard */; };
-		EDB2009C1AC04C9F0046F3D6 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EDB2009B1AC04C9F0046F3D6 /* Images.xcassets */; };
-		EDB2009F1AC04C9F0046F3D6 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = EDB2009D1AC04C9F0046F3D6 /* LaunchScreen.xib */; };
-		EDB200AB1AC04C9F0046F3D6 /* ToDoReminderTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDB200AA1AC04C9F0046F3D6 /* ToDoReminderTests.swift */; };
+		EDE13EE51AC1407300F9A140 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDE13EE41AC1407300F9A140 /* AppDelegate.swift */; };
+		EDE13EE81AC1407300F9A140 /* ToDoReminder.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = EDE13EE61AC1407300F9A140 /* ToDoReminder.xcdatamodeld */; };
+		EDE13EEA1AC1407300F9A140 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDE13EE91AC1407300F9A140 /* ViewController.swift */; };
+		EDE13EED1AC1407300F9A140 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EDE13EEB1AC1407300F9A140 /* Main.storyboard */; };
+		EDE13EEF1AC1407300F9A140 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EDE13EEE1AC1407300F9A140 /* Images.xcassets */; };
+		EDE13EF21AC1407300F9A140 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = EDE13EF01AC1407300F9A140 /* LaunchScreen.xib */; };
+		EDE13EFE1AC1407300F9A140 /* ToDoReminderTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDE13EFD1AC1407300F9A140 /* ToDoReminderTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		EDB200A51AC04C9F0046F3D6 /* PBXContainerItemProxy */ = {
+		EDE13EF81AC1407300F9A140 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = EDB200831AC04C9F0046F3D6 /* Project object */;
+			containerPortal = EDE13ED71AC1407300F9A140 /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = EDB2008A1AC04C9F0046F3D6;
+			remoteGlobalIDString = EDE13EDE1AC1407300F9A140;
 			remoteInfo = ToDoReminder;
 		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		EDB2008B1AC04C9F0046F3D6 /* ToDoReminder.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ToDoReminder.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		EDB2008F1AC04C9F0046F3D6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		EDB200901AC04C9F0046F3D6 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		EDB200921AC04C9F0046F3D6 /* RootViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootViewController.swift; sourceTree = "<group>"; };
-		EDB200941AC04C9F0046F3D6 /* DataViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataViewController.swift; sourceTree = "<group>"; };
-		EDB200961AC04C9F0046F3D6 /* ModelController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModelController.swift; sourceTree = "<group>"; };
-		EDB200991AC04C9F0046F3D6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		EDB2009B1AC04C9F0046F3D6 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
-		EDB2009E1AC04C9F0046F3D6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
-		EDB200A41AC04C9F0046F3D6 /* ToDoReminderTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ToDoReminderTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		EDB200A91AC04C9F0046F3D6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		EDB200AA1AC04C9F0046F3D6 /* ToDoReminderTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToDoReminderTests.swift; sourceTree = "<group>"; };
+		EDE13EDF1AC1407300F9A140 /* ToDoReminder.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ToDoReminder.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		EDE13EE31AC1407300F9A140 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EDE13EE41AC1407300F9A140 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		EDE13EE71AC1407300F9A140 /* ToDoReminder.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = ToDoReminder.xcdatamodel; sourceTree = "<group>"; };
+		EDE13EE91AC1407300F9A140 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		EDE13EEC1AC1407300F9A140 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		EDE13EEE1AC1407300F9A140 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		EDE13EF11AC1407300F9A140 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
+		EDE13EF71AC1407300F9A140 /* ToDoReminderTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ToDoReminderTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		EDE13EFC1AC1407300F9A140 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EDE13EFD1AC1407300F9A140 /* ToDoReminderTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToDoReminderTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		EDB200881AC04C9F0046F3D6 /* Frameworks */ = {
+		EDE13EDC1AC1407300F9A140 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		EDB200A11AC04C9F0046F3D6 /* Frameworks */ = {
+		EDE13EF41AC1407300F9A140 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -60,60 +58,59 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		EDB200821AC04C9F0046F3D6 = {
+		EDE13ED61AC1407300F9A140 = {
 			isa = PBXGroup;
 			children = (
-				EDB2008D1AC04C9F0046F3D6 /* ToDoReminder */,
-				EDB200A71AC04C9F0046F3D6 /* ToDoReminderTests */,
-				EDB2008C1AC04C9F0046F3D6 /* Products */,
+				EDE13EE11AC1407300F9A140 /* ToDoReminder */,
+				EDE13EFA1AC1407300F9A140 /* ToDoReminderTests */,
+				EDE13EE01AC1407300F9A140 /* Products */,
 			);
 			sourceTree = "<group>";
 		};
-		EDB2008C1AC04C9F0046F3D6 /* Products */ = {
+		EDE13EE01AC1407300F9A140 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				EDB2008B1AC04C9F0046F3D6 /* ToDoReminder.app */,
-				EDB200A41AC04C9F0046F3D6 /* ToDoReminderTests.xctest */,
+				EDE13EDF1AC1407300F9A140 /* ToDoReminder.app */,
+				EDE13EF71AC1407300F9A140 /* ToDoReminderTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		EDB2008D1AC04C9F0046F3D6 /* ToDoReminder */ = {
+		EDE13EE11AC1407300F9A140 /* ToDoReminder */ = {
 			isa = PBXGroup;
 			children = (
-				EDB200901AC04C9F0046F3D6 /* AppDelegate.swift */,
-				EDB200921AC04C9F0046F3D6 /* RootViewController.swift */,
-				EDB200941AC04C9F0046F3D6 /* DataViewController.swift */,
-				EDB200961AC04C9F0046F3D6 /* ModelController.swift */,
-				EDB200981AC04C9F0046F3D6 /* Main.storyboard */,
-				EDB2009B1AC04C9F0046F3D6 /* Images.xcassets */,
-				EDB2009D1AC04C9F0046F3D6 /* LaunchScreen.xib */,
-				EDB2008E1AC04C9F0046F3D6 /* Supporting Files */,
+				EDE13EE41AC1407300F9A140 /* AppDelegate.swift */,
+				EDE13EE91AC1407300F9A140 /* ViewController.swift */,
+				EDE13EEB1AC1407300F9A140 /* Main.storyboard */,
+				EDE13EEE1AC1407300F9A140 /* Images.xcassets */,
+				EDE13EF01AC1407300F9A140 /* LaunchScreen.xib */,
+				EDE13EE61AC1407300F9A140 /* ToDoReminder.xcdatamodeld */,
+				EDE13EE21AC1407300F9A140 /* Supporting Files */,
 			);
 			path = ToDoReminder;
 			sourceTree = "<group>";
 		};
-		EDB2008E1AC04C9F0046F3D6 /* Supporting Files */ = {
+		EDE13EE21AC1407300F9A140 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				EDB2008F1AC04C9F0046F3D6 /* Info.plist */,
+				EDE13EE31AC1407300F9A140 /* Info.plist */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
-		EDB200A71AC04C9F0046F3D6 /* ToDoReminderTests */ = {
+		EDE13EFA1AC1407300F9A140 /* ToDoReminderTests */ = {
 			isa = PBXGroup;
 			children = (
-				EDB200AA1AC04C9F0046F3D6 /* ToDoReminderTests.swift */,
-				EDB200A81AC04C9F0046F3D6 /* Supporting Files */,
+				EDE13EFD1AC1407300F9A140 /* ToDoReminderTests.swift */,
+				EDE13EFB1AC1407300F9A140 /* Supporting Files */,
 			);
 			path = ToDoReminderTests;
 			sourceTree = "<group>";
 		};
-		EDB200A81AC04C9F0046F3D6 /* Supporting Files */ = {
+		EDE13EFB1AC1407300F9A140 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				EDB200A91AC04C9F0046F3D6 /* Info.plist */,
+				EDE13EFC1AC1407300F9A140 /* Info.plist */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -121,13 +118,13 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		EDB2008A1AC04C9F0046F3D6 /* ToDoReminder */ = {
+		EDE13EDE1AC1407300F9A140 /* ToDoReminder */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = EDB200AE1AC04C9F0046F3D6 /* Build configuration list for PBXNativeTarget "ToDoReminder" */;
+			buildConfigurationList = EDE13F011AC1407300F9A140 /* Build configuration list for PBXNativeTarget "ToDoReminder" */;
 			buildPhases = (
-				EDB200871AC04C9F0046F3D6 /* Sources */,
-				EDB200881AC04C9F0046F3D6 /* Frameworks */,
-				EDB200891AC04C9F0046F3D6 /* Resources */,
+				EDE13EDB1AC1407300F9A140 /* Sources */,
+				EDE13EDC1AC1407300F9A140 /* Frameworks */,
+				EDE13EDD1AC1407300F9A140 /* Resources */,
 			);
 			buildRules = (
 			);
@@ -135,46 +132,46 @@
 			);
 			name = ToDoReminder;
 			productName = ToDoReminder;
-			productReference = EDB2008B1AC04C9F0046F3D6 /* ToDoReminder.app */;
+			productReference = EDE13EDF1AC1407300F9A140 /* ToDoReminder.app */;
 			productType = "com.apple.product-type.application";
 		};
-		EDB200A31AC04C9F0046F3D6 /* ToDoReminderTests */ = {
+		EDE13EF61AC1407300F9A140 /* ToDoReminderTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = EDB200B11AC04C9F0046F3D6 /* Build configuration list for PBXNativeTarget "ToDoReminderTests" */;
+			buildConfigurationList = EDE13F041AC1407300F9A140 /* Build configuration list for PBXNativeTarget "ToDoReminderTests" */;
 			buildPhases = (
-				EDB200A01AC04C9F0046F3D6 /* Sources */,
-				EDB200A11AC04C9F0046F3D6 /* Frameworks */,
-				EDB200A21AC04C9F0046F3D6 /* Resources */,
+				EDE13EF31AC1407300F9A140 /* Sources */,
+				EDE13EF41AC1407300F9A140 /* Frameworks */,
+				EDE13EF51AC1407300F9A140 /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				EDB200A61AC04C9F0046F3D6 /* PBXTargetDependency */,
+				EDE13EF91AC1407300F9A140 /* PBXTargetDependency */,
 			);
 			name = ToDoReminderTests;
 			productName = ToDoReminderTests;
-			productReference = EDB200A41AC04C9F0046F3D6 /* ToDoReminderTests.xctest */;
+			productReference = EDE13EF71AC1407300F9A140 /* ToDoReminderTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
-		EDB200831AC04C9F0046F3D6 /* Project object */ = {
+		EDE13ED71AC1407300F9A140 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
 				LastUpgradeCheck = 0620;
 				ORGANIZATIONNAME = "Mathieu Spegagne";
 				TargetAttributes = {
-					EDB2008A1AC04C9F0046F3D6 = {
+					EDE13EDE1AC1407300F9A140 = {
 						CreatedOnToolsVersion = 6.2;
 					};
-					EDB200A31AC04C9F0046F3D6 = {
+					EDE13EF61AC1407300F9A140 = {
 						CreatedOnToolsVersion = 6.2;
-						TestTargetID = EDB2008A1AC04C9F0046F3D6;
+						TestTargetID = EDE13EDE1AC1407300F9A140;
 					};
 				};
 			};
-			buildConfigurationList = EDB200861AC04C9F0046F3D6 /* Build configuration list for PBXProject "ToDoReminder" */;
+			buildConfigurationList = EDE13EDA1AC1407300F9A140 /* Build configuration list for PBXProject "ToDoReminder" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
@@ -182,29 +179,29 @@
 				en,
 				Base,
 			);
-			mainGroup = EDB200821AC04C9F0046F3D6;
-			productRefGroup = EDB2008C1AC04C9F0046F3D6 /* Products */;
+			mainGroup = EDE13ED61AC1407300F9A140;
+			productRefGroup = EDE13EE01AC1407300F9A140 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				EDB2008A1AC04C9F0046F3D6 /* ToDoReminder */,
-				EDB200A31AC04C9F0046F3D6 /* ToDoReminderTests */,
+				EDE13EDE1AC1407300F9A140 /* ToDoReminder */,
+				EDE13EF61AC1407300F9A140 /* ToDoReminderTests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		EDB200891AC04C9F0046F3D6 /* Resources */ = {
+		EDE13EDD1AC1407300F9A140 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				EDB2009A1AC04C9F0046F3D6 /* Main.storyboard in Resources */,
-				EDB2009F1AC04C9F0046F3D6 /* LaunchScreen.xib in Resources */,
-				EDB2009C1AC04C9F0046F3D6 /* Images.xcassets in Resources */,
+				EDE13EED1AC1407300F9A140 /* Main.storyboard in Resources */,
+				EDE13EF21AC1407300F9A140 /* LaunchScreen.xib in Resources */,
+				EDE13EEF1AC1407300F9A140 /* Images.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		EDB200A21AC04C9F0046F3D6 /* Resources */ = {
+		EDE13EF51AC1407300F9A140 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -214,48 +211,47 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		EDB200871AC04C9F0046F3D6 /* Sources */ = {
+		EDE13EDB1AC1407300F9A140 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				EDB200931AC04C9F0046F3D6 /* RootViewController.swift in Sources */,
-				EDB200971AC04C9F0046F3D6 /* ModelController.swift in Sources */,
-				EDB200951AC04C9F0046F3D6 /* DataViewController.swift in Sources */,
-				EDB200911AC04C9F0046F3D6 /* AppDelegate.swift in Sources */,
+				EDE13EEA1AC1407300F9A140 /* ViewController.swift in Sources */,
+				EDE13EE51AC1407300F9A140 /* AppDelegate.swift in Sources */,
+				EDE13EE81AC1407300F9A140 /* ToDoReminder.xcdatamodeld in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		EDB200A01AC04C9F0046F3D6 /* Sources */ = {
+		EDE13EF31AC1407300F9A140 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				EDB200AB1AC04C9F0046F3D6 /* ToDoReminderTests.swift in Sources */,
+				EDE13EFE1AC1407300F9A140 /* ToDoReminderTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		EDB200A61AC04C9F0046F3D6 /* PBXTargetDependency */ = {
+		EDE13EF91AC1407300F9A140 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = EDB2008A1AC04C9F0046F3D6 /* ToDoReminder */;
-			targetProxy = EDB200A51AC04C9F0046F3D6 /* PBXContainerItemProxy */;
+			target = EDE13EDE1AC1407300F9A140 /* ToDoReminder */;
+			targetProxy = EDE13EF81AC1407300F9A140 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		EDB200981AC04C9F0046F3D6 /* Main.storyboard */ = {
+		EDE13EEB1AC1407300F9A140 /* Main.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
-				EDB200991AC04C9F0046F3D6 /* Base */,
+				EDE13EEC1AC1407300F9A140 /* Base */,
 			);
 			name = Main.storyboard;
 			sourceTree = "<group>";
 		};
-		EDB2009D1AC04C9F0046F3D6 /* LaunchScreen.xib */ = {
+		EDE13EF01AC1407300F9A140 /* LaunchScreen.xib */ = {
 			isa = PBXVariantGroup;
 			children = (
-				EDB2009E1AC04C9F0046F3D6 /* Base */,
+				EDE13EF11AC1407300F9A140 /* Base */,
 			);
 			name = LaunchScreen.xib;
 			sourceTree = "<group>";
@@ -263,7 +259,7 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
-		EDB200AC1AC04C9F0046F3D6 /* Debug */ = {
+		EDE13EFF1AC1407300F9A140 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -305,7 +301,7 @@
 			};
 			name = Debug;
 		};
-		EDB200AD1AC04C9F0046F3D6 /* Release */ = {
+		EDE13F001AC1407300F9A140 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -340,7 +336,7 @@
 			};
 			name = Release;
 		};
-		EDB200AF1AC04C9F0046F3D6 /* Debug */ = {
+		EDE13F021AC1407300F9A140 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
@@ -350,7 +346,7 @@
 			};
 			name = Debug;
 		};
-		EDB200B01AC04C9F0046F3D6 /* Release */ = {
+		EDE13F031AC1407300F9A140 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
@@ -360,7 +356,7 @@
 			};
 			name = Release;
 		};
-		EDB200B21AC04C9F0046F3D6 /* Debug */ = {
+		EDE13F051AC1407300F9A140 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -379,7 +375,7 @@
 			};
 			name = Debug;
 		};
-		EDB200B31AC04C9F0046F3D6 /* Release */ = {
+		EDE13F061AC1407300F9A140 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -397,32 +393,45 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		EDB200861AC04C9F0046F3D6 /* Build configuration list for PBXProject "ToDoReminder" */ = {
+		EDE13EDA1AC1407300F9A140 /* Build configuration list for PBXProject "ToDoReminder" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				EDB200AC1AC04C9F0046F3D6 /* Debug */,
-				EDB200AD1AC04C9F0046F3D6 /* Release */,
+				EDE13EFF1AC1407300F9A140 /* Debug */,
+				EDE13F001AC1407300F9A140 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		EDB200AE1AC04C9F0046F3D6 /* Build configuration list for PBXNativeTarget "ToDoReminder" */ = {
+		EDE13F011AC1407300F9A140 /* Build configuration list for PBXNativeTarget "ToDoReminder" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				EDB200AF1AC04C9F0046F3D6 /* Debug */,
-				EDB200B01AC04C9F0046F3D6 /* Release */,
+				EDE13F021AC1407300F9A140 /* Debug */,
+				EDE13F031AC1407300F9A140 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 		};
-		EDB200B11AC04C9F0046F3D6 /* Build configuration list for PBXNativeTarget "ToDoReminderTests" */ = {
+		EDE13F041AC1407300F9A140 /* Build configuration list for PBXNativeTarget "ToDoReminderTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				EDB200B21AC04C9F0046F3D6 /* Debug */,
-				EDB200B31AC04C9F0046F3D6 /* Release */,
+				EDE13F051AC1407300F9A140 /* Debug */,
+				EDE13F061AC1407300F9A140 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		EDE13EE61AC1407300F9A140 /* ToDoReminder.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				EDE13EE71AC1407300F9A140 /* ToDoReminder.xcdatamodel */,
+			);
+			currentVersion = EDE13EE71AC1407300F9A140 /* ToDoReminder.xcdatamodel */;
+			path = ToDoReminder.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
-	rootObject = EDB200831AC04C9F0046F3D6 /* Project object */;
+	rootObject = EDE13ED71AC1407300F9A140 /* Project object */;
 }
