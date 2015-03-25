@@ -10,10 +10,10 @@
 		EDE13EE51AC1407300F9A140 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDE13EE41AC1407300F9A140 /* AppDelegate.swift */; };
 		EDE13EE81AC1407300F9A140 /* ToDoReminder.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = EDE13EE61AC1407300F9A140 /* ToDoReminder.xcdatamodeld */; };
 		EDE13EEA1AC1407300F9A140 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDE13EE91AC1407300F9A140 /* ViewController.swift */; };
-		EDE13EED1AC1407300F9A140 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EDE13EEB1AC1407300F9A140 /* Main.storyboard */; };
 		EDE13EEF1AC1407300F9A140 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EDE13EEE1AC1407300F9A140 /* Images.xcassets */; };
 		EDE13EF21AC1407300F9A140 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = EDE13EF01AC1407300F9A140 /* LaunchScreen.xib */; };
 		EDE13EFE1AC1407300F9A140 /* ToDoReminderTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDE13EFD1AC1407300F9A140 /* ToDoReminderTests.swift */; };
+		EDE13F081AC1877300F9A140 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EDE13F071AC1877300F9A140 /* Main.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -32,12 +32,12 @@
 		EDE13EE41AC1407300F9A140 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		EDE13EE71AC1407300F9A140 /* ToDoReminder.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = ToDoReminder.xcdatamodel; sourceTree = "<group>"; };
 		EDE13EE91AC1407300F9A140 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		EDE13EEC1AC1407300F9A140 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		EDE13EEE1AC1407300F9A140 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		EDE13EF11AC1407300F9A140 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
 		EDE13EF71AC1407300F9A140 /* ToDoReminderTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ToDoReminderTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		EDE13EFC1AC1407300F9A140 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		EDE13EFD1AC1407300F9A140 /* ToDoReminderTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToDoReminderTests.swift; sourceTree = "<group>"; };
+		EDE13F071AC1877300F9A140 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -81,7 +81,7 @@
 			children = (
 				EDE13EE41AC1407300F9A140 /* AppDelegate.swift */,
 				EDE13EE91AC1407300F9A140 /* ViewController.swift */,
-				EDE13EEB1AC1407300F9A140 /* Main.storyboard */,
+				EDE13F071AC1877300F9A140 /* Main.storyboard */,
 				EDE13EEE1AC1407300F9A140 /* Images.xcassets */,
 				EDE13EF01AC1407300F9A140 /* LaunchScreen.xib */,
 				EDE13EE61AC1407300F9A140 /* ToDoReminder.xcdatamodeld */,
@@ -195,7 +195,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				EDE13EED1AC1407300F9A140 /* Main.storyboard in Resources */,
+				EDE13F081AC1877300F9A140 /* Main.storyboard in Resources */,
 				EDE13EF21AC1407300F9A140 /* LaunchScreen.xib in Resources */,
 				EDE13EEF1AC1407300F9A140 /* Images.xcassets in Resources */,
 			);
@@ -240,14 +240,6 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		EDE13EEB1AC1407300F9A140 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				EDE13EEC1AC1407300F9A140 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		EDE13EF01AC1407300F9A140 /* LaunchScreen.xib */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -409,6 +401,7 @@
 				EDE13F031AC1407300F9A140 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		EDE13F041AC1407300F9A140 /* Build configuration list for PBXNativeTarget "ToDoReminderTests" */ = {
 			isa = XCConfigurationList;
@@ -417,6 +410,7 @@
 				EDE13F061AC1407300F9A140 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 
