@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		EDDE1AB41ACBFD0C009F2D82 /* AddController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDDE1AB31ACBFD0C009F2D82 /* AddController.swift */; };
+		EDDE1AB61ACD6CA0009F2D82 /* ToDo.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDDE1AB51ACD6CA0009F2D82 /* ToDo.swift */; };
 		EDE13EE51AC1407300F9A140 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDE13EE41AC1407300F9A140 /* AppDelegate.swift */; };
 		EDE13EE81AC1407300F9A140 /* ToDoReminder.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = EDE13EE61AC1407300F9A140 /* ToDoReminder.xcdatamodeld */; };
 		EDE13EEA1AC1407300F9A140 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDE13EE91AC1407300F9A140 /* ViewController.swift */; };
@@ -27,6 +29,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		EDDE1AB31ACBFD0C009F2D82 /* AddController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddController.swift; sourceTree = "<group>"; };
+		EDDE1AB51ACD6CA0009F2D82 /* ToDo.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ToDo.swift; sourceTree = "<group>"; };
 		EDE13EDF1AC1407300F9A140 /* ToDoReminder.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ToDoReminder.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EDE13EE31AC1407300F9A140 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		EDE13EE41AC1407300F9A140 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -86,6 +90,8 @@
 				EDE13EF01AC1407300F9A140 /* LaunchScreen.xib */,
 				EDE13EE61AC1407300F9A140 /* ToDoReminder.xcdatamodeld */,
 				EDE13EE21AC1407300F9A140 /* Supporting Files */,
+				EDDE1AB31ACBFD0C009F2D82 /* AddController.swift */,
+				EDDE1AB51ACD6CA0009F2D82 /* ToDo.swift */,
 			);
 			path = ToDoReminder;
 			sourceTree = "<group>";
@@ -216,8 +222,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				EDE13EEA1AC1407300F9A140 /* ViewController.swift in Sources */,
+				EDDE1AB61ACD6CA0009F2D82 /* ToDo.swift in Sources */,
 				EDE13EE51AC1407300F9A140 /* AppDelegate.swift in Sources */,
 				EDE13EE81AC1407300F9A140 /* ToDoReminder.xcdatamodeld in Sources */,
+				EDDE1AB41ACBFD0C009F2D82 /* AddController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

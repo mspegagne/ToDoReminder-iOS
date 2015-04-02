@@ -46,7 +46,7 @@
         <!--Add-->
         <scene sceneID="PU6-eV-GOu">
             <objects>
-                <viewController id="fcw-h2-GOu" sceneMemberID="viewController">
+                <viewController id="fcw-h2-GOu" customClass="AddController" customModule="ToDoReminder" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="K56-bN-lmN"/>
                         <viewControllerLayoutGuide type="bottom" id="8Xi-Ti-NjU"/>
@@ -59,11 +59,17 @@
                                 <rect key="frame" x="36" y="134" width="528" height="30"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
+                                <connections>
+                                    <action selector="TitleListener:" destination="fcw-h2-GOu" eventType="editingDidEnd" id="tdj-gT-1k2"/>
+                                </connections>
                             </textField>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Rhw-cc-nsW">
                                 <rect key="frame" x="36" y="235" width="528" height="30"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
+                                <connections>
+                                    <action selector="TextListener:" destination="fcw-h2-GOu" eventType="editingDidEnd" id="IAC-NG-1fk"/>
+                                </connections>
                             </textField>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Text" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XBJ-83-3vT">
                                 <rect key="frame" x="36" y="194" width="31.5" height="20.5"/>
@@ -87,6 +93,9 @@
                                             <constraint firstAttribute="width" constant="60" id="33R-50-ZRC"/>
                                         </constraints>
                                         <state key="normal" title="Save"/>
+                                        <connections>
+                                            <action selector="SaveListener:" destination="fcw-h2-GOu" eventType="touchUpInside" id="G30-ol-D8V"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -115,6 +124,11 @@
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="Add" id="9ZY-o7-TJd"/>
+                    <connections>
+                        <outlet property="SaveButton" destination="YXL-Vb-aBE" id="Vdg-pZ-PDu"/>
+                        <outlet property="TextField" destination="Rhw-cc-nsW" id="ZZZ-QK-VmJ"/>
+                        <outlet property="TitleField" destination="aNe-XX-SvX" id="NPa-W4-mey"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="L6b-gO-5E2" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -179,10 +193,10 @@
             </objects>
             <point key="canvasLocation" x="-409" y="251.99999999999997"/>
         </scene>
-        <!--Navigation Controller-->
+        <!--Add Controller-->
         <scene sceneID="4Kq-jM-jzC">
             <objects>
-                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="G1J-bB-jaK" sceneMemberID="viewController">
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="G1J-bB-jaK" customClass="AddController" customModule="ToDoReminder" customModuleProvider="target" sceneMemberID="viewController">
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="2jN-kN-6kM">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
@@ -200,6 +214,6 @@
     </scenes>
     <inferredMetricsTieBreakers>
         <segue reference="vZa-IV-nhL"/>
-        <segue reference="ShL-ev-ot7"/>
+        <segue reference="IWd-go-mPD"/>
     </inferredMetricsTieBreakers>
 </document>
