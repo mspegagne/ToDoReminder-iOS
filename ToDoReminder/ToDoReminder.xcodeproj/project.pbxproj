@@ -7,11 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		EDDE1AB41ACBFD0C009F2D82 /* AddController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDDE1AB31ACBFD0C009F2D82 /* AddController.swift */; };
-		EDDE1AB61ACD6CA0009F2D82 /* ToDo.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDDE1AB51ACD6CA0009F2D82 /* ToDo.swift */; };
+		EDB5EB891AD13AF500CA3458 /* ToDoController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDB5EB881AD13AF500CA3458 /* ToDoController.swift */; };
+		EDB5EB8B1AD13B1600CA3458 /* HistoryController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDB5EB8A1AD13B1600CA3458 /* HistoryController.swift */; };
+		EDB5EB8F1AD13B4F00CA3458 /* AddController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDB5EB8E1AD13B4F00CA3458 /* AddController.swift */; };
+		EDB5EB931AD13D5500CA3458 /* ToDoReminder.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = EDB5EB911AD13D5500CA3458 /* ToDoReminder.xcdatamodeld */; };
+		EDB5EB971AD13DC000CA3458 /* ToDo.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDB5EB961AD13DC000CA3458 /* ToDo.swift */; };
 		EDE13EE51AC1407300F9A140 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDE13EE41AC1407300F9A140 /* AppDelegate.swift */; };
-		EDE13EE81AC1407300F9A140 /* ToDoReminder.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = EDE13EE61AC1407300F9A140 /* ToDoReminder.xcdatamodeld */; };
-		EDE13EEA1AC1407300F9A140 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDE13EE91AC1407300F9A140 /* ViewController.swift */; };
 		EDE13EEF1AC1407300F9A140 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EDE13EEE1AC1407300F9A140 /* Images.xcassets */; };
 		EDE13EF21AC1407300F9A140 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = EDE13EF01AC1407300F9A140 /* LaunchScreen.xib */; };
 		EDE13EFE1AC1407300F9A140 /* ToDoReminderTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDE13EFD1AC1407300F9A140 /* ToDoReminderTests.swift */; };
@@ -29,13 +30,14 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		EDDE1AB31ACBFD0C009F2D82 /* AddController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddController.swift; sourceTree = "<group>"; };
-		EDDE1AB51ACD6CA0009F2D82 /* ToDo.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ToDo.swift; sourceTree = "<group>"; };
+		EDB5EB881AD13AF500CA3458 /* ToDoController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ToDoController.swift; sourceTree = "<group>"; };
+		EDB5EB8A1AD13B1600CA3458 /* HistoryController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HistoryController.swift; sourceTree = "<group>"; };
+		EDB5EB8E1AD13B4F00CA3458 /* AddController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddController.swift; sourceTree = "<group>"; };
+		EDB5EB921AD13D5500CA3458 /* ToDoReminder.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = ToDoReminder.xcdatamodel; sourceTree = "<group>"; };
+		EDB5EB961AD13DC000CA3458 /* ToDo.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ToDo.swift; sourceTree = "<group>"; };
 		EDE13EDF1AC1407300F9A140 /* ToDoReminder.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ToDoReminder.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EDE13EE31AC1407300F9A140 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		EDE13EE41AC1407300F9A140 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		EDE13EE71AC1407300F9A140 /* ToDoReminder.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = ToDoReminder.xcdatamodel; sourceTree = "<group>"; };
-		EDE13EE91AC1407300F9A140 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		EDE13EEE1AC1407300F9A140 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		EDE13EF11AC1407300F9A140 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
 		EDE13EF71AC1407300F9A140 /* ToDoReminderTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ToDoReminderTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -62,6 +64,25 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		EDB5EB981AD145B900CA3458 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				EDB5EB881AD13AF500CA3458 /* ToDoController.swift */,
+				EDB5EB8A1AD13B1600CA3458 /* HistoryController.swift */,
+				EDB5EB8E1AD13B4F00CA3458 /* AddController.swift */,
+			);
+			name = Controllers;
+			sourceTree = "<group>";
+		};
+		EDB5EB991AD145C900CA3458 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				EDB5EB911AD13D5500CA3458 /* ToDoReminder.xcdatamodeld */,
+				EDB5EB961AD13DC000CA3458 /* ToDo.swift */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
 		EDE13ED61AC1407300F9A140 = {
 			isa = PBXGroup;
 			children = (
@@ -83,15 +104,13 @@
 		EDE13EE11AC1407300F9A140 /* ToDoReminder */ = {
 			isa = PBXGroup;
 			children = (
+				EDB5EB991AD145C900CA3458 /* Model */,
+				EDB5EB981AD145B900CA3458 /* Controllers */,
 				EDE13EE41AC1407300F9A140 /* AppDelegate.swift */,
-				EDE13EE91AC1407300F9A140 /* ViewController.swift */,
 				EDE13F071AC1877300F9A140 /* Main.storyboard */,
 				EDE13EEE1AC1407300F9A140 /* Images.xcassets */,
 				EDE13EF01AC1407300F9A140 /* LaunchScreen.xib */,
-				EDE13EE61AC1407300F9A140 /* ToDoReminder.xcdatamodeld */,
 				EDE13EE21AC1407300F9A140 /* Supporting Files */,
-				EDDE1AB31ACBFD0C009F2D82 /* AddController.swift */,
-				EDDE1AB51ACD6CA0009F2D82 /* ToDo.swift */,
 			);
 			path = ToDoReminder;
 			sourceTree = "<group>";
@@ -221,11 +240,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				EDE13EEA1AC1407300F9A140 /* ViewController.swift in Sources */,
-				EDDE1AB61ACD6CA0009F2D82 /* ToDo.swift in Sources */,
 				EDE13EE51AC1407300F9A140 /* AppDelegate.swift in Sources */,
-				EDE13EE81AC1407300F9A140 /* ToDoReminder.xcdatamodeld in Sources */,
-				EDDE1AB41ACBFD0C009F2D82 /* AddController.swift in Sources */,
+				EDB5EB8B1AD13B1600CA3458 /* HistoryController.swift in Sources */,
+				EDB5EB891AD13AF500CA3458 /* ToDoController.swift in Sources */,
+				EDB5EB971AD13DC000CA3458 /* ToDo.swift in Sources */,
+				EDB5EB8F1AD13B4F00CA3458 /* AddController.swift in Sources */,
+				EDB5EB931AD13D5500CA3458 /* ToDoReminder.xcdatamodeld in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -423,12 +443,12 @@
 /* End XCConfigurationList section */
 
 /* Begin XCVersionGroup section */
-		EDE13EE61AC1407300F9A140 /* ToDoReminder.xcdatamodeld */ = {
+		EDB5EB911AD13D5500CA3458 /* ToDoReminder.xcdatamodeld */ = {
 			isa = XCVersionGroup;
 			children = (
-				EDE13EE71AC1407300F9A140 /* ToDoReminder.xcdatamodel */,
+				EDB5EB921AD13D5500CA3458 /* ToDoReminder.xcdatamodel */,
 			);
-			currentVersion = EDE13EE71AC1407300F9A140 /* ToDoReminder.xcdatamodel */;
+			currentVersion = EDB5EB921AD13D5500CA3458 /* ToDoReminder.xcdatamodel */;
 			path = ToDoReminder.xcdatamodeld;
 			sourceTree = "<group>";
 			versionGroupType = wrapper.xcdatamodel;
