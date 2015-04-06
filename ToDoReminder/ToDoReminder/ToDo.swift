@@ -27,13 +27,14 @@ class ToDo: NSManagedObject {
     
     class func save(moc: NSManagedObjectContext, newTitle: String, newText: String) -> ToDo {
         
-        let task = NSEntityDescription.insertNewObjectForEntityForName("ToDo", inManagedObjectContext: moc) as ToDo
-        
+        let entityDescripition = NSEntityDescription.entityForName("ToDo", inManagedObjectContext: moc)
+        let task = ToDo(entity: entityDescripition!, insertIntoManagedObjectContext: moc)
         task.title = newTitle
         task.text = newText
         task.history = false
-        
+        moc.save(nil)
         return task
+        
     }
 
 }
