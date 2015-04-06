@@ -9,12 +9,13 @@
 import UIKit
 import CoreData
 
-class ToDoController: UITableViewController {
+class ToDoController: UITableViewController, NSFetchedResultsControllerDelegate {
     
     var log = [ToDo]()
     
-    // Retreive the managedObjectContext from AppDelegate
     let managedObjectContext = (UIApplication.sharedApplication().delegate as AppDelegate).managedObjectContext
+    
+    var fetchedResultController: NSFetchedResultsController = NSFetchedResultsController()
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -22,6 +23,10 @@ class ToDoController: UITableViewController {
         fetchLog()
         println(log)
         
+        fetchedResultController = getFetchedResultController()
+        fetchedResultController.delegate = self
+        fetchedResultController.performFetch(nil)
+
     }
 
     override func didReceiveMemoryWarning() {
@@ -45,18 +50,32 @@ class ToDoController: UITableViewController {
         }
     }
     
-    // MARK: - Table view data source
-
-    override func numberOfSectionsInTableView(tableView: UITableView) -> Int {
-        // #warning Potentially incomplete method implementation.
-        // Return the number of sections.
-        return 0
+    func getFetchedResultController() -> NSFetchedResultsController {
+        fetchedResultController = NSFetchedResultsController(fetchRequest: taskFetchRequest(), managedObjectContext: managedObjectContext!, sectionNameKeyPath: nil, cacheName: nil)
+        return fetchedResultController
     }
+    
+    func taskFetchRequest() -> NSFetchRequest {
+        let fetchRequest = NSFetchRequest(entityName: "ToDo")
+        let sortDescriptor = NSSortDescriptor(key: "title", ascending: true)
+        fetchRequest.sortDescriptors = [sortDescriptor]
+        return fetchRequest
+    }
+    
 
     override func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        // #warning Incomplete method implementation.
-        // Return the number of rows in the section.
-        return 0
+        return log.count
+    }
+
+    override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
+        var cell = tableView.dequeueReusableCellWithIdentifier("Cell", forIndexPath: indexPath) as UITableViewCell
+        let task = fetchedResultController.objectAtIndexPath(indexPath) as ToDo
+        cell.textLabel?.text = task.title
+        return cell
+    }
+
+    func controllerDidChangeContent(controller: NSFetchedResultsController!) {
+        tableView.reloadData()
     }
 
 
