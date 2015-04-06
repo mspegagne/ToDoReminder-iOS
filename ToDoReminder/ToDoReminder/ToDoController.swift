@@ -21,7 +21,6 @@ class ToDoController: UITableViewController, NSFetchedResultsControllerDelegate 
         super.viewDidLoad()
         
         fetchLog()
-        println(log)
         
         fetchedResultController = getFetchedResultController()
         fetchedResultController.delegate = self
@@ -77,7 +76,19 @@ class ToDoController: UITableViewController, NSFetchedResultsControllerDelegate 
     func controllerDidChangeContent(controller: NSFetchedResultsController!) {
         tableView.reloadData()
     }
+    
+    override func tableView(tableView: UITableView, commitEditingStyle editingStyle: UITableViewCellEditingStyle, forRowAtIndexPath indexPath: NSIndexPath) {
+        let managedObject:NSManagedObject = fetchedResultController.objectAtIndexPath(indexPath) as NSManagedObject
+        managedObjectContext?.deleteObject(managedObject)
+        managedObjectContext?.save(nil)
+        
+        // Refresh the table view to indicate that it's deleted
+        self.fetchLog()
+        
+        // Tell the table view to animate out that row
+        tableView.deleteRowsAtIndexPaths([indexPath], withRowAnimation: .Automatic)
+        
 
-
+    }
 
 }
