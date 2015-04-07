@@ -17,7 +17,7 @@ class ToDoController: UITableViewController, NSFetchedResultsControllerDelegate 
     
     var fetchedResultController: NSFetchedResultsController = NSFetchedResultsController()
     
-     override func viewWillAppear(animated: Bool) {
+    override func viewWillAppear(animated: Bool) {
         super.viewDidLoad()
         
         fetchLog()
@@ -61,9 +61,12 @@ class ToDoController: UITableViewController, NSFetchedResultsControllerDelegate 
     }
 
     override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
-        var cell = tableView.dequeueReusableCellWithIdentifier("Cell", forIndexPath: indexPath) as UITableViewCell
+        
+        let cell: UITableViewCell = UITableViewCell(style: UITableViewCellStyle.Subtitle, reuseIdentifier: "Cell")
+        
         let task = fetchedResultController.objectAtIndexPath(indexPath) as ToDo
         cell.textLabel?.text = task.title
+        cell.detailTextLabel?.text = task.text
         
         if task.history.boolValue{
             cell.accessoryType = .Checkmark
@@ -105,6 +108,8 @@ class ToDoController: UITableViewController, NSFetchedResultsControllerDelegate 
         let managedObject:NSManagedObject = fetchedResultController.objectAtIndexPath(indexPath) as NSManagedObject
         managedObjectContext?.deleteObject(managedObject)
         managedObjectContext?.save(nil)
+        
+        tableView.dataSource = self;
         
         self.fetchLog()
         
