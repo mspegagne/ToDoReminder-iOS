@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		EDB5EB891AD13AF500CA3458 /* ToDoController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDB5EB881AD13AF500CA3458 /* ToDoController.swift */; };
-		EDB5EB8B1AD13B1600CA3458 /* HistoryController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDB5EB8A1AD13B1600CA3458 /* HistoryController.swift */; };
 		EDB5EB8F1AD13B4F00CA3458 /* AddController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDB5EB8E1AD13B4F00CA3458 /* AddController.swift */; };
 		EDB5EB931AD13D5500CA3458 /* ToDoReminder.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = EDB5EB911AD13D5500CA3458 /* ToDoReminder.xcdatamodeld */; };
 		EDB5EB971AD13DC000CA3458 /* ToDo.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDB5EB961AD13DC000CA3458 /* ToDo.swift */; };
@@ -31,7 +30,6 @@
 
 /* Begin PBXFileReference section */
 		EDB5EB881AD13AF500CA3458 /* ToDoController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ToDoController.swift; sourceTree = "<group>"; };
-		EDB5EB8A1AD13B1600CA3458 /* HistoryController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HistoryController.swift; sourceTree = "<group>"; };
 		EDB5EB8E1AD13B4F00CA3458 /* AddController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddController.swift; sourceTree = "<group>"; };
 		EDB5EB921AD13D5500CA3458 /* ToDoReminder.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = ToDoReminder.xcdatamodel; sourceTree = "<group>"; };
 		EDB5EB961AD13DC000CA3458 /* ToDo.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ToDo.swift; sourceTree = "<group>"; };
@@ -68,7 +66,6 @@
 			isa = PBXGroup;
 			children = (
 				EDB5EB881AD13AF500CA3458 /* ToDoController.swift */,
-				EDB5EB8A1AD13B1600CA3458 /* HistoryController.swift */,
 				EDB5EB8E1AD13B4F00CA3458 /* AddController.swift */,
 			);
 			name = Controllers;
@@ -241,7 +238,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				EDE13EE51AC1407300F9A140 /* AppDelegate.swift in Sources */,
-				EDB5EB8B1AD13B1600CA3458 /* HistoryController.swift in Sources */,
 				EDB5EB891AD13AF500CA3458 /* ToDoController.swift in Sources */,
 				EDB5EB971AD13DC000CA3458 /* ToDo.swift in Sources */,
 				EDB5EB8F1AD13B4F00CA3458 /* AddController.swift in Sources */,

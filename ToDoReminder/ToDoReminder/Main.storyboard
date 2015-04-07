@@ -27,11 +27,6 @@
                         </connections>
                     </tableView>
                     <navigationItem key="navigationItem" title="ToDo" id="HM8-bK-4vK">
-                        <barButtonItem key="leftBarButtonItem" title="History" style="plain" id="QrY-IQ-mc5">
-                            <connections>
-                                <segue destination="mNP-hA-iCB" kind="show" id="vZa-IV-nhL"/>
-                            </connections>
-                        </barButtonItem>
                         <barButtonItem key="rightBarButtonItem" style="plain" systemItem="add" id="7bm-Xa-fBr">
                             <connections>
                                 <segue destination="fcw-h2-GOu" kind="show" id="ShL-ev-ot7"/>
@@ -126,7 +121,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="L6b-gO-5E2" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="307" y="1007"/>
+            <point key="canvasLocation" x="-45" y="311"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="r9N-9R-AuO">
@@ -144,49 +139,6 @@
             </objects>
             <point key="canvasLocation" x="-917" y="-657"/>
         </scene>
-        <!--History-->
-        <scene sceneID="abr-lw-6xg">
-            <objects>
-                <tableViewController id="mNP-hA-iCB" customClass="HistoryController" customModule="ToDoReminder" customModuleProvider="target" sceneMemberID="viewController">
-                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" id="C0V-I3-zUz">
-                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                        <prototypes>
-                            <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="hXv-OQ-ymI">
-                                <autoresizingMask key="autoresizingMask"/>
-                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="hXv-OQ-ymI" id="lCl-1U-Ck1">
-                                    <autoresizingMask key="autoresizingMask"/>
-                                </tableViewCellContentView>
-                            </tableViewCell>
-                        </prototypes>
-                        <connections>
-                            <outlet property="dataSource" destination="mNP-hA-iCB" id="wUV-7z-I4y"/>
-                            <outlet property="delegate" destination="mNP-hA-iCB" id="laK-kU-KgR"/>
-                        </connections>
-                    </tableView>
-                    <navigationItem key="navigationItem" title="History" id="zJU-la-cqS"/>
-                </tableViewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="hnO-EY-p5F" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="-409" y="1007.9999999999999"/>
-        </scene>
-        <!--Navigation Controller-->
-        <scene sceneID="3br-x6-Ehg">
-            <objects>
-                <navigationController id="nho-J4-NIz" sceneMemberID="viewController">
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="drm-A8-XyR">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
-                        <autoresizingMask key="autoresizingMask"/>
-                    </navigationBar>
-                    <connections>
-                        <segue destination="mNP-hA-iCB" kind="relationship" relationship="rootViewController" id="ncC-Ym-c2e"/>
-                    </connections>
-                </navigationController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="gEX-Yb-E9h" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="-409" y="251.99999999999997"/>
-        </scene>
         <!--Add Controller-->
         <scene sceneID="4Kq-jM-jzC">
             <objects>
@@ -203,11 +155,10 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ivJ-Og-yHU" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="307" y="251.99999999999997"/>
+            <point key="canvasLocation" x="-917" y="311"/>
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="vZa-IV-nhL"/>
         <segue reference="ShL-ev-ot7"/>
     </inferredMetricsTieBreakers>
 </document>
