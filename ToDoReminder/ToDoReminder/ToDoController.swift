@@ -17,7 +17,7 @@ class ToDoController: UITableViewController, NSFetchedResultsControllerDelegate 
     
     var fetchedResultController: NSFetchedResultsController = NSFetchedResultsController()
     
-    override func viewDidLoad() {
+     override func viewWillAppear(animated: Bool) {
         super.viewDidLoad()
         
         fetchLog()
@@ -25,7 +25,7 @@ class ToDoController: UITableViewController, NSFetchedResultsControllerDelegate 
         fetchedResultController = getFetchedResultController()
         fetchedResultController.delegate = self
         fetchedResultController.performFetch(nil)
-
+        
     }
 
     override func didReceiveMemoryWarning() {
@@ -35,7 +35,7 @@ class ToDoController: UITableViewController, NSFetchedResultsControllerDelegate 
     func fetchLog() {
         let fetchRequest = NSFetchRequest(entityName: "ToDo")
         
-        let sortDescriptor = NSSortDescriptor(key: "history", ascending: true)
+        let sortDescriptor = NSSortDescriptor(key: "title", ascending: true)
         fetchRequest.sortDescriptors = [sortDescriptor]
         
         if let fetchResults = managedObjectContext!.executeFetchRequest(fetchRequest, error: nil) as? [ToDo] {
@@ -50,7 +50,7 @@ class ToDoController: UITableViewController, NSFetchedResultsControllerDelegate 
     
     func taskFetchRequest() -> NSFetchRequest {
         let fetchRequest = NSFetchRequest(entityName: "ToDo")
-        let sortDescriptor = NSSortDescriptor(key: "history", ascending: true)
+        let sortDescriptor = NSSortDescriptor(key: "title", ascending: true)
         fetchRequest.sortDescriptors = [sortDescriptor]
         return fetchRequest
     }

@@ -27,9 +27,13 @@ class AddController: UIViewController {
     
     @IBAction func saveListener(sender: AnyObject) {
         if let moc = self.managedObjectContext {
+            
             let task = ToDo.save(moc, newTitle: titleField.text, newText: textField.text)
-            let alertController = task.alert()
-            self.presentViewController(alertController, animated: true, completion: nil)
+            titleField.text = ""
+            textField.text = ""
+            
+            let nextViewController  : AnyObject! = storyboard?.instantiateViewControllerWithIdentifier("ToDo")
+            self.presentViewController(nextViewController as UIViewController, animated: true, completion:nil)
         }
     }
 
