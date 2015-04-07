@@ -70,11 +70,34 @@ class ToDoController: UITableViewController, NSFetchedResultsControllerDelegate 
         var cell = tableView.dequeueReusableCellWithIdentifier("Cell", forIndexPath: indexPath) as UITableViewCell
         let task = fetchedResultController.objectAtIndexPath(indexPath) as ToDo
         cell.textLabel?.text = task.title
+        
+        if task.history.boolValue{
+            cell.accessoryType = .Checkmark
+        }
+            
+        else{
+            cell.accessoryType = .None
+        }
+        
         return cell
+        
+        
     }
 
     func controllerDidChangeContent(controller: NSFetchedResultsController!) {
         tableView.reloadData()
+    }
+    
+    override func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
+            
+            tableView.deselectRowAtIndexPath(indexPath, animated: false)
+            
+            var tappedItem: ToDo = self.log[indexPath.row] as ToDo
+            
+            tappedItem.history = !tappedItem.history.boolValue
+        
+            tableView.reloadData()
+            
     }
     
     override func tableView(tableView: UITableView, commitEditingStyle editingStyle: UITableViewCellEditingStyle, forRowAtIndexPath indexPath: NSIndexPath) {
