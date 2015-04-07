@@ -96,6 +96,13 @@ class ToDoController: UITableViewController, NSFetchedResultsControllerDelegate 
             
             tappedItem.history = !tappedItem.history.boolValue
         
+            var error : NSError?
+        
+            if !self.managedObjectContext!.save(&error) {
+                NSLog("Unresolved error \(error), \(error!.userInfo)")
+                abort()
+            }
+        
             tableView.reloadData()
             
     }
